@@ -1,9 +1,9 @@
 'use client'
+import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { IconButton } from '@mui/material'
 import { DarkModeOutlined, LightMode } from '@mui/icons-material'
 import { grey } from '@mui/material/colors'
-import { useEffect, useState } from 'react'
 
 const ThemeToggle = () => {
   const { setTheme, theme } = useTheme()
