@@ -12,6 +12,7 @@ const ThemeToggle = () => {
   useEffect(() => {
     setTheme('dark')
     setMounted(true)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const handleTheme = () => {

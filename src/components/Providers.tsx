@@ -7,7 +7,7 @@ const Providers = ({ children }: {children: React.ReactNode }) => {
 
 return (
      <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
-          <SessionProvider >
+          <SessionProvider>
                {children}
           </SessionProvider>     
      </ThemeProvider>
