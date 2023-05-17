@@ -1,6 +1,4 @@
-
-export * from './Paragraph'
-export * from './LargeHeading'
-export * from './SignInButton'
-export * from './SignOutButton'
-export * from './DropdownMenu'
+export { default as Paragraph} from './Paragraph'
+export { default as LargeHeading} from './LargeHeading'
+export { default as SignInButton} from './SignInButton'
+export { default as SignOutButton} from './SignOutButton'

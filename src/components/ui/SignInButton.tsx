@@ -3,16 +3,14 @@
 import { signIn } from 'next-auth/react'
 import { FC, useState } from 'react'
 import { Button } from './Button'
-// import { toast } from './toast'
 
 /**
  * NextJS does not allow to pass function from server -> client components,
  * hence this unreusable component.
  */
 
-interface SignInButtonProps {}
 
-export const SignInButton: FC<SignInButtonProps> = ({}) => {
+const SignInButton: FC = ({}) => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const signInWithGoogle = async () => {
@@ -35,3 +33,5 @@ export const SignInButton: FC<SignInButtonProps> = ({}) => {
     </Button>
   )
 }
+
+export default SignInButton
