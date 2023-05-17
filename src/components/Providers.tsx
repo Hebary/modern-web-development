@@ -3,13 +3,15 @@
 import { ThemeProvider } from 'next-themes'
 import { SessionProvider } from 'next-auth/react'
 
-export const Providers = ({ children }: {children: React.ReactNode }) => {
+const Providers = ({ children }: {children: React.ReactNode }) => {
 
 return (
-     <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+     <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
           <SessionProvider >
                {children}
           </SessionProvider>     
      </ThemeProvider>
     )
 }
+
+export default Providers

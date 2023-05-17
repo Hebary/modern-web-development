@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { getServerSession } from 'next-auth';
 import{ SignOutButton, SignInButton }from './ui';
 import { buttonVariants } from './ui/Button';
-import { ThemeToggle } from './ToggleTheme';
+import { ThemeToggle } from '@/components';
 
-export const Navbar = async () => {
+const Navbar = async () => {
         
     const session = await getServerSession();
     
@@ -12,7 +12,7 @@ export const Navbar = async () => {
          <div className='fixed backdrop-blur-sm bg-white/75 dark:bg-slate-900 z-50 top-0 left-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-between '>
             <div className='container max-w-7xl mx-auto w-full flex justify-between items-center'>
                 <Link href='/' className={buttonVariants({variant:'link'})}>
-                    How we build 1.0
+                    How we code 1.0
                 </Link>
 
                 <div className='md:hidden'>
@@ -38,3 +38,5 @@ export const Navbar = async () => {
          </div>
     )
 }
+
+export default Navbar
