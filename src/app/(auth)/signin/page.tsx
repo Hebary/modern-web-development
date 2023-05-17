@@ -1,10 +1,10 @@
+import { FC } from 'react'
+import Link from 'next/link'
+import { ChevronLeft } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/Button'
 import LargeHeading from '@/components/ui/LargeHeading'
 import Paragraph from '@/components/ui/Paragraph'
 import UserAuthForm from '@/components/UserAuthForm'
-import { ChevronLeft } from 'lucide-react'
-import Link from 'next/link'
-import { FC } from 'react'
 
 const page: FC = () => {
   return (

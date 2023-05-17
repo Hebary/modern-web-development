@@ -27,7 +27,7 @@ const Navbar = async () => {
 
                     {session 
                         ? ( <>
-                                <Link href='dashboard' className={buttonVariants({variant:'ghost'})}>
+                                <Link href='/' className={buttonVariants({variant:'ghost'})}>
                                     Dashboard
                                 </Link>
                                 <SignOutButton/>
