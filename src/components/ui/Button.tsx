@@ -53,4 +53,5 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ className, children
 )
 Button.displayName = 'Button'
 
-export { Button, buttonVariants }
+export { buttonVariants }
+export default Button

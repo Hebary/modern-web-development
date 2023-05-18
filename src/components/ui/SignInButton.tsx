@@ -2,7 +2,7 @@
 
 import { signIn } from 'next-auth/react'
 import { FC, useState } from 'react'
-import { Button } from './Button'
+import { Button } from '../ui'
 
 /**
  * NextJS does not allow to pass function from server -> client components,

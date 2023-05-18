@@ -22,12 +22,12 @@ const Navbar = async () => {
                 <div className='hidden md:flex gap-4'>
                     <ThemeToggle />
                     <Link href={'/documentation'}  className={buttonVariants({variant:'ghost'})}>
-                        Documentation
+                        Projects
                     </Link>
 
                     {session 
                         ? ( <>
-                                <Link href='/' className={buttonVariants({variant:'ghost'})}>
+                                <Link href='/dashboard' className={buttonVariants({variant:'ghost'})}>
                                     Dashboard
                                 </Link>
                                 <SignOutButton/>

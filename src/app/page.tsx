@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import{ LargeHeading, Paragraph } from '@/components/ui'
 
@@ -21,27 +20,16 @@ export default function Home() {
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>
-            With the Text Similarity API, you can easily determine the
-            similarity between two pieces of text with a free{' '}
+            Template using Next 13.4.2 has implemented next auth with google and toggleTheme{' '}
             <Link
-              href='/login'
+              href='/signin'
               className='underline underline-offset-2 text-black dark:text-light-gold'>
-              API key
+                Build something new
             </Link>
             .
           </Paragraph>
 
-          <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
-            <Image
-              priority
-              className='img-shadow '
-              quality={100}
-              style={{ objectFit: 'contain' }}
-              fill
-              src='/typewriter.png'
-              alt='typewriter'
-            />
-          </div>
+
         </div>
       </div>
     </div>
