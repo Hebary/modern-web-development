@@ -18,17 +18,12 @@ const SignInButton: FC = ({}) => {
       setIsLoading(true)
       await signIn('google')
     } catch (error) {
-    //   toast({
-    //     title: 'Error signing in',
-    //     message: 'Please try again later.',
-    //     type: 'error',
-    //   })
-    console.log(error)
+      console.log(error)
     }
   }
 
   return (
-    <Button onClick={signInWithGoogle} isLoading={isLoading}>
+    <Button onClick={ signInWithGoogle } isLoading={isLoading}>
       Sign in
     </Button>
   )

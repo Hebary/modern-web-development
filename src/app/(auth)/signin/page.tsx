@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Link from 'next/link'
-import { ChevronLeft } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/Button'
+import { CgArrowLongLeft } from 'react-icons/cg'
 import LargeHeading from '@/components/ui/LargeHeading'
 import Paragraph from '@/components/ui/Paragraph'
 import UserAuthForm from '@/components/UserAuthForm'
@@ -18,7 +18,7 @@ const page: FC = () => {
                 className: 'w-fit',
               })}
               href='/'>
-              <ChevronLeft className='mr-2 h-4 w-4' />
+              <CgArrowLongLeft className='mr-2 h-4 w-4' />
               Back to home
             </Link>
 

@@ -4,8 +4,8 @@ import{ LargeHeading, Paragraph } from '@/components/ui'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
+  title: 'Next Template',
+  description: 'Personal Template for projects top level ',
 }
 
 export default function Home() {
