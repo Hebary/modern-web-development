@@ -13,17 +13,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={cn('bg-white dark:bg-black text-slate-900 antialised', inter.className)}>
+    <html lang='en' className={cn('bg-white dark:bg-black text-slate-900 antialised', inter.className)}>
       <body className={'min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'}>
           <Providers>
             {children}
           
             {/* @ts-expect-error ->Server compónent reason*/}
             <Navbar/>
+
             
           </Providers>
           {/* Allow for more height on mobile devices */}
-          <div className="h-40 md:hidden" />
+          <div className='h-40 md:hidden' />
         </body>
     </html>
   )

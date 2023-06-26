@@ -4,8 +4,8 @@ import{ LargeHeading, Paragraph } from '@/components/ui'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Next Template',
-  description: 'Personal Template for projects top level ',
+  title: 'Joke maker - Home page',
+  description: 'Welcome to the home page ',
 }
 
 export default function Home() {
@@ -16,20 +16,18 @@ export default function Home() {
           <LargeHeading
             size='lg'
             className='three-d text-black dark:text-light-gold'>
-            How we <br /> Code 1.0.
+            Open AI <br /> Joke maker app.
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>
-            Template using Next 13.4.2 has implemented next auth with google and toggleTheme{' '}
+            Builded with Open AI & Next.js 13 this app generates jokes {' '}<br/>
             <Link
-              href='/signin'
+              href='/jokemaker'
               className='underline underline-offset-2 text-black dark:text-light-gold'>
-                Build something new
+                Just give it a try!
             </Link>
             .
           </Paragraph>
-
-
         </div>
       </div>
     </div>
