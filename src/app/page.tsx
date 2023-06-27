@@ -4,7 +4,7 @@ import{ LargeHeading, Paragraph } from '@/components/ui'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Joke maker - Home page',
+  title: 'Text maker - Home page',
   description: 'Welcome to the home page ',
 }
 
@@ -16,15 +16,15 @@ export default function Home() {
           <LargeHeading
             size='lg'
             className='three-d text-black dark:text-light-gold'>
-            Open AI <br /> Joke maker app.
+            Open AI <br /> Text maker app.
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>
-            Builded with Open AI & Next.js 13 this app generates jokes {' '}<br/>
+            Builded with Open AI & Next.js 13 this app generates text, jokes, tips and more. {' '}<br/>
             <Link
-              href='/jokemaker'
+              href='/textmaker'
               className='underline underline-offset-2 text-black dark:text-light-gold'>
-                Just give it a try!
+                Just try it!
             </Link>
             .
           </Paragraph>

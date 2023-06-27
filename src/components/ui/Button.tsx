@@ -4,7 +4,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { ImSpinner2 } from 'react-icons/im'
 
 const buttonVariants = cva(
-  'active:scale-95 inline-flex tracking-wide items-center justify-center rounded-md text-sm font-medium transition-all focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900',
+  'active:scale-95 inline-flex tracking-wide items-center justify-center rounded-md text-sm font-medium transition-all focus:outline-none  disabled:opacity-50  disabled:pointer-events-none ring-offset-0',
   {
     variants: {
       variant: {

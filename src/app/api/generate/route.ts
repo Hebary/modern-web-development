@@ -8,11 +8,12 @@ const openai = new OpenAIApi(config);
 
 export async function POST(req: Request) {
     let msg;
+    const body = await req.json();
     try {
         const response = await openai.createCompletion({
             model: 'text-davinci-003',
-            prompt: 'Dame un chiste',
-            temperature: 0.7,
+            prompt: body.prompt,
+            temperature: 1,
             max_tokens: 64,
         });
         msg = response.data.choices[0].text;
