@@ -41,7 +41,7 @@ const TextClient = () => {
                             placeholder="For example :  'make me a joke' " 
                             className='dark:text-white text-slate-900 rounded-md p-2 bg-transparent mb-3 border border-gray-500'
                         />
-                        <input type='submit' value='Generate' className={buttonVariants({variant:'subtle'})}/>
+                        <input type='submit' value='Generate' disabled={!prompt} className={buttonVariants({variant:'subtle'})}/>
                     </div>
                 </form>
             </div>
