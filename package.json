@@ -2,6 +2,7 @@
   "name": "openai-next",
   "version": "1.0.0",
   "private": true,
+  "author": "Bernardo D'Addario",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
