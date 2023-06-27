@@ -9,12 +9,15 @@ const openai = new OpenAIApi(config);
 export async function POST(req: Request) {
     let msg;
     const body = await req.json();
+
+    if(!body.prompt || body.prompt.trim().length<=0) throw new Error('No prompt provided!');
+
     try {
         const response = await openai.createCompletion({
             model: 'text-davinci-003',
-            prompt: body.prompt,
+            prompt: `Dime algo relacionado con${body.prompt}`,
             temperature: 1,
-            max_tokens: 64,
+            max_tokens: 60,
         });
         msg = response.data.choices[0].text;
     } catch (error: any) {
